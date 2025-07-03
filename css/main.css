@@ -117,3 +117,13 @@ input[type=file] {
   margin: 0 auto;
   background-color: red;
 }
+
+.header {
+  background-image: url("/image/header/Rectangle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo__title {
+  color: white;
+}
