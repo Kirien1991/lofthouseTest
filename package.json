@@ -1,0 +1,17 @@
+{
+  "name": "lofthouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss:watch": "gulp watch"
+  },
+  "author": "Kirill",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.89.2"
+  },
+  "keywords": [],
+  "description": ""
+}
