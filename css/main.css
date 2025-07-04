@@ -110,10 +110,17 @@ input[type=file] {
   max-width: 100%;
 }
 
+body {
+  background-color: #242b33;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1159px;
   margin: 0 auto;
+}
+.container--small {
+  max-width: 840px;
 }
 
 .title-accent {
@@ -146,7 +153,6 @@ input[type=file] {
   padding-top: 12px;
 }
 .header__footer {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -159,7 +165,7 @@ input[type=file] {
   padding-left: 18px;
 }
 .logo__link {
-  padding-bottom: 14px;
+  margin-bottom: 14px;
   transition: transform 0.3s ease;
 }
 .logo__link:hover {
@@ -169,6 +175,7 @@ input[type=file] {
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   letter-spacing: 0.12em;
+  letter-spacing: 1px;
 }
 
 .nav__list {
@@ -212,6 +219,9 @@ input[type=file] {
 .info:hover {
   color: #d4c17f;
 }
+.info:hover::after {
+  transform: scale(1.1);
+}
 
 .info-tel {
   position: relative;
@@ -232,6 +242,9 @@ input[type=file] {
 .info-tel:hover {
   color: #d4c17f;
 }
+.info-tel:hover::before {
+  transform: scale(1.1);
+}
 
 .banner {
   margin-bottom: 200px;
@@ -241,4 +254,31 @@ input[type=file] {
   bottom: 0;
   left: 50.6%;
   transform: translate(-50%, 0%);
+}
+
+.testimonials {
+  padding: 123px 0;
+  overflow: hidden;
+}
+.testimonials__item {
+  text-align: center;
+}
+.testimonials__img {
+  margin-bottom: 53px;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonials__text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.testimonials-row {
+  display: flex;
+  column-gap: 70px;
 }

@@ -1,0 +1,28 @@
+.testimonials {
+  padding: 123px 0;
+  overflow: hidden;
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 53px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    font-family: $font-roboto;
+    color: $white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+}
+
+.testimonials-row {
+  display: flex;
+  column-gap: 70px;
+}

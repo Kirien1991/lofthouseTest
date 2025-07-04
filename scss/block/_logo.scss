@@ -5,7 +5,7 @@
   padding-left: 18px;
 
   &__link {
-    padding-bottom: 14px;
+    margin-bottom: 14px;
     transition: transform 0.3s ease;
 
     &:hover {
@@ -17,5 +17,6 @@
     font-family: $font-raleway;
     font-size: 12px;
     letter-spacing: 0.12em;
+    letter-spacing: 1px;
   }
 }

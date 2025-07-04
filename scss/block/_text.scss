@@ -26,6 +26,10 @@
   &:hover {
     color: $accent;
   }
+
+  &:hover::after {
+    transform: scale(1.1);
+  }
 }
 
 .info-tel {
@@ -47,5 +51,9 @@
 
   &:hover {
     color: $accent;
+  }
+
+  &:hover::before {
+    transform: scale(1.1);
   }
 }
