@@ -4,12 +4,45 @@
   background-repeat: repeat;
   min-height: 840px;
   padding-top: 45px;
+  overflow: hidden;
 
   &__top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 200px;
   }
   &__nav {
     padding-top: 12px;
+  }
+
+  &__average {
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    position: relative;
+    padding-bottom: 121px;
+    text-align: center;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+
+    span {
+      padding-left: 12px;
+    }
+
+    &-icon {
+      position: absolute;
+      bottom: 0;
+      left: 50.6%;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 }

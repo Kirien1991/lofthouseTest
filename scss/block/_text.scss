@@ -1,0 +1,25 @@
+.text-left {
+}
+
+.text-right {
+}
+
+.info {
+  color: $white;
+  font-family: $font-raleway;
+  font-size: 18px;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.info-tel {
+  color: $white;
+  font-family: $font-raleway;
+  font-size: 18px;
+
+  &:hover {
+    color: $accent;
+  }
+}

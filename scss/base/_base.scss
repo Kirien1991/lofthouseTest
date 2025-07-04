@@ -3,3 +3,10 @@
   max-width: 1159px;
   margin: 0 auto;
 }
+
+.title-accent {
+  font-family: $font-accent;
+  color: $accent;
+  font-size: 48px;
+  font-weight: 700;
+}
