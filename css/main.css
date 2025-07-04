@@ -120,7 +120,7 @@ body {
   margin: 0 auto;
 }
 .container--small {
-  max-width: 836px;
+  max-width: 824px;
 }
 
 .title-accent {
@@ -280,5 +280,8 @@ body {
 
 .testimonials-row {
   display: flex;
+  justify-content: space-between;
   column-gap: 49px;
+  position: relative;
+  left: 7px;
 }

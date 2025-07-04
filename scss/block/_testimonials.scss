@@ -24,5 +24,8 @@
 
 .testimonials-row {
   display: flex;
+  justify-content: space-between;
   column-gap: 49px;
+  position: relative;
+  left: 7px;
 }
