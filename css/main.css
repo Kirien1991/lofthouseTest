@@ -112,18 +112,49 @@ input[type=file] {
 
 .container {
   padding: 0 15px;
-  max-width: 1140px;
-  height: 500px;
+  max-width: 1159px;
   margin: 0 auto;
-  background-color: red;
 }
 
 .header {
   background-image: url("/image/header/Rectangle.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: repeat;
+  min-height: 840px;
+  padding-top: 45px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav {
+  padding-top: 12px;
 }
 
-.logo__title {
+.logo {
   color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+}
+.logo__link {
+  padding-bottom: 14px;
+}
+.logo__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+}
+
+.nav__list {
+  display: flex;
+  gap: 38px;
+}
+.nav__link {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.05em;
 }

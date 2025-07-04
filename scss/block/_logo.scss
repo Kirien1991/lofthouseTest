@@ -1,5 +1,17 @@
 .logo {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+
+  &__link {
+    padding-bottom: 14px;
+  }
+
   &__title {
-    color: $title;
+    font-family: $font-raleway;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
   }
 }

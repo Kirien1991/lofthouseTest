@@ -1,0 +1,17 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 38px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: $font-raleway;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 0.05em;
+  }
+}

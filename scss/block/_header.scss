@@ -1,5 +1,15 @@
 .header {
   background-image: url("/image/header/Rectangle.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: repeat;
+  min-height: 840px;
+  padding-top: 45px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+    padding-top: 12px;
+  }
 }
