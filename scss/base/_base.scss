@@ -5,8 +5,15 @@
 }
 
 .title-accent {
+  position: relative;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
   font-family: $font-accent;
   color: $accent;
-  font-size: 48px;
   font-weight: 700;
+
+  span {
+    padding-left: 12px;
+  }
 }

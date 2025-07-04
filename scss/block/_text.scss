@@ -1,13 +1,27 @@
 .text-left {
+  text-align: right;
 }
 
 .text-right {
+  padding-left: 53px;
 }
 
 .info {
+  position: relative;
   color: $white;
   font-family: $font-raleway;
   font-size: 18px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -32px;
+    right: 0;
+    bottom: 0;
+    background-image: url("/image/header/map.svg");
+    background-repeat: no-repeat;
+  }
 
   &:hover {
     color: $accent;
@@ -15,9 +29,21 @@
 }
 
 .info-tel {
+  position: relative;
   color: $white;
   font-family: $font-raleway;
   font-size: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -36px;
+    right: 0;
+    bottom: 0;
+    background-image: url("/image/header/phone.svg");
+    background-repeat: no-repeat;
+  }
 
   &:hover {
     color: $accent;

@@ -1,0 +1,10 @@
+.banner {
+  margin-bottom: 200px;
+
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    left: 50.6%;
+    transform: translate(-50%, 0%);
+  }
+}
