@@ -19,5 +19,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    padding-bottom: 58px;
+    min-height: 200px;
+    align-items: end;
   }
 }
