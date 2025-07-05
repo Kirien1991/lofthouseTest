@@ -295,6 +295,11 @@ body {
 .card__item {
   position: relative;
 }
+.card__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .card__text {
   font-family: "Raleway", sans-serif;
   color: white;
