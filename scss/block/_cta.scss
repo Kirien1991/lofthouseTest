@@ -1,0 +1,37 @@
+.cta {
+  margin-top: 180px;
+  overflow: hidden;
+  background-image: url("/image/cta/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 548px;
+  }
+
+  &__title {
+    padding-left: 17px;
+    p {
+      font-family: $font-raleway;
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 19px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 28px;
+
+    padding-top: 65px;
+    padding-left: 8px;
+  }
+}

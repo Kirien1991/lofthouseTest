@@ -1,7 +1,8 @@
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px 24px;
+  gap: 31px 24px;
+  padding-left: 15px;
   &__item {
     position: relative;
   }
@@ -20,5 +21,9 @@
     position: absolute;
     bottom: 42px;
     left: 51px;
+
+    &:hover {
+      color: $accent;
+    }
   }
 }

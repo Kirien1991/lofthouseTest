@@ -135,6 +135,11 @@ body {
   text-align: start;
   font-size: 36px;
 }
+.title-accent--st {
+  text-align: start;
+  font-size: 36px;
+  padding-left: 18px;
+}
 .title-accent span {
   padding-left: 12px;
 }
@@ -295,14 +300,11 @@ body {
 .apartments__item {
   margin-bottom: 87px;
 }
-.apartments__title {
-  padding-left: 17px;
-}
-
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px 24px;
+  gap: 31px 24px;
+  padding-left: 15px;
 }
 .card__item {
   position: relative;
@@ -319,4 +321,71 @@ body {
   position: absolute;
   bottom: 42px;
   left: 51px;
+}
+.card__text:hover {
+  color: #d4c17f;
+}
+
+.cta {
+  margin-top: 180px;
+  overflow: hidden;
+  background-image: url("/image/cta/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.cta__item {
+  max-width: 548px;
+}
+.cta__title {
+  padding-left: 17px;
+}
+.cta__title p {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 19px;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 28px;
+  padding-top: 65px;
+  padding-left: 8px;
+}
+
+.form__input {
+  max-width: 255px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__privacy {
+  font-family: "Raleway", sans-serif;
+  color: #e7e7e7;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  padding-top: 12px;
+}
+.form__btn {
+  max-width: 255px;
+  height: 50px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 16px;
+  background-color: #d4c17f;
+}
+.form__btn:hover {
+  color: #ffd580;
 }
