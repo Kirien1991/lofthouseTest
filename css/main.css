@@ -327,7 +327,8 @@ body {
 }
 
 .cta {
-  margin-top: 180px;
+  padding-top: 180px;
+  padding-bottom: 160px;
   overflow: hidden;
   background-image: url("/image/cta/Rectangle.jpg");
   background-size: cover;
