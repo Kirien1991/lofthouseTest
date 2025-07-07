@@ -145,7 +145,7 @@ body {
   color: #d4c17f;
   font-weight: 700;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .title-accent {
     font-size: 24px;
   }
@@ -184,7 +184,7 @@ body {
   justify-content: space-between;
   margin-bottom: 185px;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .header__top {
     display: flex;
     flex-direction: column;
@@ -211,7 +211,7 @@ body {
   min-height: 200px;
   align-items: end;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .header__footer {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -243,7 +243,7 @@ body {
 .logo__link img {
   padding-bottom: 15px;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .logo__link img {
     width: 225px;
     height: 54px;
@@ -259,7 +259,7 @@ body {
   letter-spacing: 0.12em;
   letter-spacing: 1px;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .logo__title {
     padding-left: 25px;
     font-size: 16px;
@@ -275,7 +275,7 @@ body {
     gap: 10px;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .nav__list {
     display: flex;
     gap: 60px;
@@ -306,7 +306,7 @@ body {
 .text-right {
   padding-left: 53px;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .text-right {
     padding-left: 0;
   }
@@ -368,7 +368,7 @@ body {
   left: 50.6%;
   transform: translate(-50%, 0%);
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 695px) {
   .banner__icon {
     bottom: -100px;
   }
