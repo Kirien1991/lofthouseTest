@@ -7,5 +7,9 @@
     bottom: -121px;
     left: 50.6%;
     transform: translate(-50%, 0%);
+
+    @include mediaSmall {
+      bottom: -100px;
+    }
   }
 }

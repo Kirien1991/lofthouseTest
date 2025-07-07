@@ -13,6 +13,12 @@
     justify-content: space-between;
     margin-bottom: 185px;
 
+    @include mediaSmall {
+      display: flex;
+      flex-direction: column;
+
+    }
+
     @include mediaTablet {
       margin-bottom: 130px;
     }
@@ -35,5 +41,12 @@
     padding-bottom: 58px;
     min-height: 200px;
     align-items: end;
+
+    @include mediaSmall {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-items: center;
+      align-content: center;
+    }
   }
 }

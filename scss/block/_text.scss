@@ -4,6 +4,10 @@
 
 .text-right {
   padding-left: 53px;
+
+  @include mediaSmall {
+    padding-left: 0;
+  }
 }
 
 .info {

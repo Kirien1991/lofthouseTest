@@ -6,7 +6,6 @@
 
     @include mediaTablet {
       gap: 10px;
-
     }
 
     @include mediaSmall {
@@ -14,6 +13,7 @@
       gap: 60px;
       flex-direction: column;
       text-align: center;
+      padding-right: 15px;
     }
   }
 
