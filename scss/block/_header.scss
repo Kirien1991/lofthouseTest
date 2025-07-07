@@ -2,15 +2,15 @@
   background-image: url("/image/header/Rectangle.jpg");
   background-size: cover;
   background-repeat: repeat;
-  min-height: 840px;
-  padding-top: 45px;
+  padding-top: 61px;
   overflow: hidden;
 
   &__top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 185px;
   }
+
   &__nav {
     padding-top: 12px;
   }

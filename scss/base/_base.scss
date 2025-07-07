@@ -10,6 +10,23 @@ body {
   &--small {
     max-width: 824px;
   }
+
+  &--video {
+    max-width: 763px;
+    position: relative;
+
+    &::before {
+      content: "IV";
+      position: absolute;
+      font-family: $font-accent;
+      font-size: 400px;
+      font-weight: 700;
+      color: $white;
+      opacity: 0.02;
+      right: 0;
+      transform: translate(92%, 11%);
+    }
+  }
 }
 
 .title-accent {

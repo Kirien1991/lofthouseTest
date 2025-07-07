@@ -12,12 +12,9 @@
     gap: 30px;
   }
 
-  &__item {
-    max-width: 548px;
-  }
-
   &__title {
     padding-left: 17px;
+    max-width: 548px;
     p {
       font-family: $font-raleway;
       color: $white;

@@ -1,0 +1,35 @@
+.video {
+    overflow: hidden;
+    text-align: center;
+
+    &__content {
+        max-width: 750px;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+
+        &:hover {
+            transition: filter 0.3s ease;
+            filter: brightness(1.2);
+        }
+    }
+
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-43%, -40%);
+        background-repeat: no-repeat;
+    }
+
+    &__image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        padding-left: 14px;
+    }
+}

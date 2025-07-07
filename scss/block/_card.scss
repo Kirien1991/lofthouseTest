@@ -1,8 +1,9 @@
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 31px 24px;
-  padding-left: 15px;
+  gap: 29px 27px;
+  padding-left: 17px;
+
   &__item {
     position: relative;
   }

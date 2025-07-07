@@ -1,6 +1,7 @@
 .testimonials {
   padding: 123px 3px 113px 0;
   overflow: hidden;
+
   &__item {
     text-align: center;
   }
@@ -27,5 +28,19 @@
   justify-content: space-between;
   column-gap: 49px;
   position: relative;
-  left: 7px;
+  left: 9px;
+
+
+  &::before {
+    content: "II";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: $font-accent;
+    font-size: 400px;
+    font-weight: 700;
+    color: $white;
+    opacity: 0.02;
+    transform: translate(102%, -28%);
+  }
 }

@@ -7,6 +7,12 @@
   &__link {
     margin-bottom: 14px;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      padding-bottom: 15px;
+    }
 
     &:hover {
       transform: scale(1.2);
@@ -15,6 +21,7 @@
 
   &__title {
     font-family: $font-raleway;
+    color: $white;
     font-size: 12px;
     letter-spacing: 0.12em;
     letter-spacing: 1px;
