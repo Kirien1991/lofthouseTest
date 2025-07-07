@@ -164,6 +164,8 @@ body {
   background-image: url("/image/header/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
   padding-top: 61px;
   overflow: hidden;
 }
@@ -462,4 +464,33 @@ body {
   background-repeat: no-repeat;
   padding-top: 20px;
   padding-left: 14px;
+}
+
+.section-map {
+  padding: 180px 0;
+}
+.section-map__map {
+  max-width: 1127px;
+  padding-top: 88px;
+  padding-left: 17px;
+  position: relative;
+}
+.section-map__map::before {
+  content: "V";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-weight: 700;
+  color: white;
+  opacity: 0.02;
+  transform: translate(-46%, -22%);
+}
+
+.map {
+  overflow: hidden;
+  height: 358px;
+  background: #626262;
+  position: relative;
 }
