@@ -37,6 +37,14 @@ body {
   color: $accent;
   font-weight: 700;
 
+  @include mediaSmall {
+    font-size: 24px;
+  }
+
+  @include mediaTablet {
+    font-size: 36px;
+  }
+
   &--start {
     text-align: start;
     font-size: 36px;

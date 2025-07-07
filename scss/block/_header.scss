@@ -11,10 +11,20 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 185px;
+
+    @include mediaTablet {
+      margin-bottom: 130px;
+    }
   }
 
   &__nav {
     padding-top: 12px;
+
+    @include mediaTablet {
+      padding-top: 15px;
+    }
+
+
   }
 
   &__footer {

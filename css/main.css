@@ -146,6 +146,16 @@ body {
   color: #d4c17f;
   font-weight: 700;
 }
+@media screen and (max-width: 690px) {
+  .title-accent {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .title-accent {
+    font-size: 36px;
+  }
+}
 .title-accent--start {
   text-align: start;
   font-size: 36px;
@@ -174,8 +184,18 @@ body {
   justify-content: space-between;
   margin-bottom: 185px;
 }
+@media screen and (max-width: 959px) {
+  .header__top {
+    margin-bottom: 130px;
+  }
+}
 .header__nav {
   padding-top: 12px;
+}
+@media screen and (max-width: 959px) {
+  .header__nav {
+    padding-top: 15px;
+  }
 }
 .header__footer {
   display: grid;
@@ -191,6 +211,11 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 18px;
+}
+@media screen and (max-width: 959px) {
+  .logo {
+    padding-top: 8px;
+  }
 }
 .logo__link {
   margin-bottom: 14px;
@@ -216,11 +241,29 @@ body {
   display: flex;
   gap: 38px;
 }
+@media screen and (max-width: 959px) {
+  .nav__list {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .nav__list {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .nav__link {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: white;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 959px) {
+  .nav__link {
+    font-size: 16px;
+  }
 }
 .nav__link:hover {
   color: #d4c17f;

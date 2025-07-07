@@ -1,0 +1,17 @@
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mediaSmall {
+    @media screen and (max-width: $small) {
+        @content;
+    }
+}
+
+@mixin mediaBorder {
+    @media screen and (max-width: $border) {
+        @content;
+    }
+}
