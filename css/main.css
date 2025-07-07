@@ -149,6 +149,7 @@ body {
 .title-accent--start {
   text-align: start;
   font-size: 36px;
+  padding-top: 2px;
 }
 .title-accent--st {
   text-align: start;
@@ -162,7 +163,7 @@ body {
 .header {
   background-image: url("/image/header/Rectangle.jpg");
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   padding-top: 61px;
   overflow: hidden;
 }
@@ -279,10 +280,7 @@ body {
 
 .banner {
   margin-bottom: 200px;
-  background-image: url("/image/header/Rectangle.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  position: relative;
 }
 .banner__icon {
   position: absolute;
@@ -292,7 +290,7 @@ body {
 }
 
 .testimonials {
-  padding: 123px 3px 113px 0;
+  padding: 136px 3px 113px 0;
   overflow: hidden;
 }
 .testimonials__item {
@@ -400,9 +398,9 @@ body {
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 35px 28px;
-  padding-top: 65px;
-  padding-left: 8px;
+  gap: 36px 27px;
+  padding-top: 66px;
+  padding-left: 7px;
 }
 
 .form__input {

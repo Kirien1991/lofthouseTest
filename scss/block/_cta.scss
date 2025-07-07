@@ -15,6 +15,7 @@
   &__title {
     padding-left: 17px;
     max-width: 548px;
+
     p {
       font-family: $font-raleway;
       color: $white;
@@ -27,9 +28,8 @@
   &__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px 28px;
-
-    padding-top: 65px;
-    padding-left: 8px;
+    gap: 36px 27px;
+    padding-top: 66px;
+    padding-left: 7px;
   }
 }
