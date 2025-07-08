@@ -469,6 +469,9 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+.cta__wrapper--bottom {
+  display: block;
+}
 .cta__title {
   padding-left: 17px;
   max-width: 548px;
@@ -486,6 +489,20 @@ body {
   gap: 36px 27px;
   padding-top: 66px;
   padding-left: 7px;
+}
+.cta__form--bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 36px 27px;
+  padding-top: 37px;
+}
+.cta__form--bottom p {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 13px;
+  line-height: 19px;
+  padding-top: 9px;
+  text-align: center;
 }
 
 .form__input {
@@ -550,7 +567,7 @@ body {
 }
 
 .section-map {
-  padding: 180px 0;
+  padding: 180px 0 0 0;
 }
 .section-map__map {
   max-width: 1127px;
