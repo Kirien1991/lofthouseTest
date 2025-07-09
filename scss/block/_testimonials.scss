@@ -1,6 +1,10 @@
 .testimonials {
-  padding: 136px 3px 113px 0;
+  margin: 136px 3px 113px 0;
   overflow: hidden;
+
+  @include mediaTablet {
+    margin-top: 25px;
+  }
 
   &__item {
     text-align: center;
@@ -29,6 +33,12 @@
   column-gap: 49px;
   position: relative;
   left: 9px;
+
+  @include mediaTablet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 35px 20px;
+  }
 
 
   &::before {

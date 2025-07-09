@@ -2,6 +2,10 @@
   margin-bottom: 200px;
   position: relative;
 
+  @include mediaTablet {
+    margin-bottom: 130px;
+  }
+
   &__icon {
     position: absolute;
     bottom: -121px;

@@ -4,6 +4,10 @@
   gap: 29px 27px;
   padding-left: 17px;
 
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+
   &__item {
     position: relative;
   }
@@ -25,6 +29,10 @@
 
     &:hover {
       color: $accent;
+    }
+
+    @include mediaTablet {
+      font-size: 14px;
     }
   }
 }
