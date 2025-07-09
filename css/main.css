@@ -160,10 +160,20 @@ body {
   font-size: 36px;
   padding-top: 2px;
 }
+@media screen and (max-width: 695px) {
+  .title-accent--start {
+    text-align: center;
+  }
+}
 .title-accent--st {
   text-align: start;
   font-size: 36px;
   padding-left: 18px;
+}
+@media screen and (max-width: 695px) {
+  .title-accent--st {
+    text-align: center;
+  }
 }
 .title-accent--bottom {
   font-size: 36px;
