@@ -56,7 +56,21 @@ body {
     padding-left: 18px;
   }
 
+  &--bottom {
+    font-size: 36px;
+    text-align: start;
+  }
+
   span {
     padding-left: 12px;
   }
+}
+
+
+//footer
+.link-adress {
+  color: $accent;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding-left: 8px;
 }

@@ -1,0 +1,57 @@
+.footer {
+    padding-top: 91px;
+    padding-bottom: 50px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__nav {
+        padding-left: 8px;
+        padding-top: 2px;
+    }
+
+    &__adress {
+        padding-top: 1px;
+        padding-left: 2px;
+    }
+
+    &__socials {
+        padding-top: 21px;
+        padding-left: 1px;
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+    }
+
+}
+
+.footer-nav {
+    &__list {
+        gap: 15px;
+        display: grid;
+
+    }
+
+    &__item {
+        font-family: $font-raleway;
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__link {
+        font-family: $font-raleway;
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+}

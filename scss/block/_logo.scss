@@ -1,7 +1,6 @@
 .logo {
   color: $white;
   display: flex;
-  flex-direction: column;
   padding-left: 18px;
 
   @include mediaTablet {

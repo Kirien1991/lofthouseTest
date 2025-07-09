@@ -4,6 +4,10 @@
     display: flex;
     gap: 38px;
 
+    &--bottom {
+      flex-direction: column;
+    }
+
     @include mediaTablet {
       gap: 10px;
     }

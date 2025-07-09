@@ -165,8 +165,19 @@ body {
   font-size: 36px;
   padding-left: 18px;
 }
+.title-accent--bottom {
+  font-size: 36px;
+  text-align: start;
+}
 .title-accent span {
   padding-left: 12px;
+}
+
+.link-adress {
+  color: #d4c17f;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding-left: 8px;
 }
 
 .header {
@@ -223,7 +234,6 @@ body {
 .logo {
   color: white;
   display: flex;
-  flex-direction: column;
   padding-left: 18px;
 }
 @media screen and (max-width: 959px) {
@@ -269,6 +279,9 @@ body {
 .nav__list {
   display: flex;
   gap: 38px;
+}
+.nav__list--bottom {
+  flex-direction: column;
 }
 @media screen and (max-width: 959px) {
   .nav__list {
@@ -457,8 +470,8 @@ body {
 }
 
 .cta {
-  padding-top: 180px;
-  padding-bottom: 160px;
+  margin-top: 180px;
+  margin-bottom: 160px;
   overflow: hidden;
   background-image: url("/image/cta/Rectangle.jpg");
   background-size: cover;
@@ -487,30 +500,31 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 36px 27px;
-  padding-top: 66px;
-  padding-left: 7px;
+  margin-top: 66px;
+  margin-left: 7px;
 }
 .cta__form--bottom {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 36px 27px;
-  padding-top: 37px;
+  gap: 30px;
+  margin-top: 39px;
 }
 .cta__form--bottom p {
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 13px;
-  line-height: 19px;
-  padding-top: 9px;
+  padding-top: 11px;
   text-align: center;
+  padding-left: 7px;
 }
 
 .form__input {
-  max-width: 255px;
   height: 50px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  min-width: 255px;
+  padding: 12px;
 }
 .form__input::placeholder {
   color: #bebebe;
@@ -524,13 +538,14 @@ body {
   padding-top: 12px;
 }
 .form__btn {
-  max-width: 255px;
+  min-width: 255px;
   height: 50px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 16px;
   background-color: #d4c17f;
+  padding: 12px;
 }
 .form__btn:hover {
   color: #ffd580;
@@ -593,4 +608,50 @@ body {
   height: 358px;
   background: #626262;
   position: relative;
+}
+
+.footer {
+  padding-top: 91px;
+  padding-bottom: 50px;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.footer__nav {
+  padding-left: 8px;
+  padding-top: 2px;
+}
+.footer__adress {
+  padding-top: 1px;
+  padding-left: 2px;
+}
+.footer__socials {
+  padding-top: 21px;
+  padding-left: 1px;
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.footer-nav__list {
+  gap: 15px;
+  display: grid;
+}
+.footer-nav__item {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-nav__link {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.footer-nav__link:hover {
+  color: #d4c17f;
 }
