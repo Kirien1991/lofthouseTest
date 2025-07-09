@@ -229,7 +229,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  margin-bottom: 58px;
   min-height: 200px;
   align-items: end;
 }
@@ -382,7 +381,7 @@ body {
 }
 
 .banner {
-  margin-bottom: 200px;
+  margin-bottom: 142px;
   position: relative;
 }
 @media screen and (max-width: 959px) {
@@ -403,7 +402,7 @@ body {
 }
 
 .testimonials {
-  margin: 136px 3px 113px 0;
+  padding: 194px 3px 113px 0;
   overflow: hidden;
 }
 @media screen and (max-width: 959px) {
@@ -523,6 +522,12 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
 .cta__wrapper--bottom {
   display: block;
 }
@@ -544,11 +549,23 @@ body {
   margin-top: 66px;
   margin-left: 7px;
 }
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
 .cta__form--bottom {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
   margin-top: 39px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form--bottom {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
 }
 .cta__form--bottom p {
   font-family: "Raleway", sans-serif;

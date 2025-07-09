@@ -16,6 +16,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 
+    @include mediaTablet {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
     &--bottom {
       display: block;
 
@@ -45,11 +50,21 @@
     margin-top: 66px;
     margin-left: 7px;
 
+    @include mediaTablet {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+
     &--bottom {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 30px;
       margin-top: 39px;
+
+      @include mediaTablet {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
 
 
       p {
