@@ -470,12 +470,16 @@ body {
 }
 
 .cta {
-  margin-top: 180px;
-  margin-bottom: 160px;
+  padding-top: 180px;
+  padding-bottom: 161px;
   overflow: hidden;
   background-image: url("/image/cta/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.cta--bottom {
+  background-image: none;
+  margin-bottom: 18px;
 }
 .cta__wrapper {
   display: grid;
@@ -611,8 +615,9 @@ body {
 }
 
 .footer {
-  padding-top: 91px;
+  padding-top: 71px;
   padding-bottom: 50px;
+  background-color: #2D343C;
 }
 .footer__grid {
   display: grid;

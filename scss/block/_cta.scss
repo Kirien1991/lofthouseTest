@@ -1,10 +1,15 @@
 .cta {
-  margin-top: 180px;
-  margin-bottom: 160px;
+  padding-top: 180px;
+  padding-bottom: 161px;
   overflow: hidden;
   background-image: url("/image/cta/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  &--bottom {
+    background-image: none;
+    margin-bottom: 18px;
+  }
 
   &__wrapper {
     display: grid;
