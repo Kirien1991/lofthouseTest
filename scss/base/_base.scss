@@ -2,6 +2,10 @@ body {
   background-color: $dark;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1159px;

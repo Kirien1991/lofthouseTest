@@ -114,6 +114,10 @@ body {
   background-color: #242b33;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1159px;
@@ -772,6 +776,11 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 695px) {
+  .burger-btn {
+    margin-top: 45px;
+  }
+}
 .burger-btn span {
   display: block;
   width: 100%;
@@ -812,9 +821,8 @@ body {
 @media screen and (max-width: 959px) {
   .burger-menu {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     position: fixed;
     top: 0;

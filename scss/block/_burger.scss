@@ -12,8 +12,10 @@
 
     @include mediaTablet {
         display: block;
+    }
 
-
+    @include mediaSmall {
+        margin-top: 45px;
     }
 
     span {
@@ -62,9 +64,8 @@
 
     @include mediaTablet {
         display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         gap: 50px;
         position: fixed;
         top: 0;
