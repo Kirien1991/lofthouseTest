@@ -6,9 +6,20 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include mediaTablet {
+    padding: 40px 0;
+
+
+  }
+
   &--bottom {
     background-image: none;
     margin-bottom: 18px;
+
+    @include mediaTablet {
+
+      padding: 40px 0;
+    }
   }
 
   &__wrapper {
@@ -23,6 +34,8 @@
 
     &--bottom {
       display: block;
+
+
 
     }
   }
@@ -53,6 +66,7 @@
     @include mediaTablet {
       grid-template-columns: 1fr;
       gap: 5px;
+      margin-top: 10px;
     }
 
     &--bottom {
@@ -64,6 +78,7 @@
       @include mediaTablet {
         grid-template-columns: 1fr;
         gap: 5px;
+        margin-top: 10px;
       }
 
 

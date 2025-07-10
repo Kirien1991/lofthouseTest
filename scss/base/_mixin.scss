@@ -1,3 +1,9 @@
+@mixin mediaMore {
+    @media screen and (max-width: $more) {
+        @content;
+    }
+}
+
 @mixin mediaTablet {
     @media screen and (max-width: $tablet) {
         @content;

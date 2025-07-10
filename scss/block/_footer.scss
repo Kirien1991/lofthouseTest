@@ -3,10 +3,18 @@
     padding-bottom: 50px;
     background-color: $bottom;
 
+    @include mediaSmall {
+        padding: 40px 0;
+    }
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
+
+        @include mediaSmall {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     &__nav {
@@ -33,6 +41,10 @@
     &__list {
         gap: 15px;
         display: grid;
+
+        @include mediaSmall {
+            gap: 10px;
+        }
 
     }
 

@@ -4,7 +4,7 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
     color: $white;
-    min-width: 255px;
+    width: 100%;
     padding: 12px;
 
     &::placeholder {
@@ -19,10 +19,21 @@
     line-height: 16px;
     text-align: center;
     padding-top: 12px;
+
+
+
+    @include mediaTablet {
+      grid-row: 1;
+      color: $accent;
+    }
+
+    @include mediaMore {
+      font-size: 11px;
+    }
   }
 
   &__btn {
-    min-width: 255px;
+    width: 100%;
     height: 50px;
     text-align: center;
     font-family: $font-raleway;

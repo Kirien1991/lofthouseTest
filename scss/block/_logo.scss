@@ -9,6 +9,11 @@
     padding-bottom: 20px;
   }
 
+
+  @include mediaSmall {
+    padding-left: 0;
+  }
+
   &__link {
     margin-bottom: 14px;
     transition: transform 0.3s ease;
@@ -37,7 +42,7 @@
     letter-spacing: 1px;
 
     @include mediaSmall {
-      padding-left: 25px;
+      padding: 0 25px;
       font-size: 16px;
     }
   }
