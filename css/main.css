@@ -114,10 +114,6 @@ body {
   background-color: #242b33;
 }
 
-body.no-scroll {
-  overflow: hidden;
-}
-
 .container {
   padding: 0 15px;
   max-width: 1159px;
@@ -823,7 +819,7 @@ body.no-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
     position: fixed;
     top: 0;
     left: -100%;
