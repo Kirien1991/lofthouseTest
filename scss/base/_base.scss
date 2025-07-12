@@ -82,3 +82,9 @@ body {
   letter-spacing: 0.6px;
   padding-left: 8px;
 }
+
+.menu_mobile_didden {
+  @include mediaTablet {
+    overflow: hidden;
+  }
+}

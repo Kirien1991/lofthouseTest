@@ -1,19 +1,47 @@
 .banner {
   margin-bottom: 142px;
+  margin-top: -518px;
   position: relative;
 
+
   @include mediaTablet {
-    margin-bottom: 130px;
+
+    margin-top: -600px;
+  }
+
+  @include mediaSmall {
+    margin-top: -370px;
+    margin-bottom: -50px;
   }
 
   &__icon {
     position: absolute;
-    bottom: -121px;
-    left: 50.6%;
+    top: 44%;
+    left: 50.4%;
     transform: translate(-50%, 0%);
 
     @include mediaSmall {
+      top: 30%;
+      left: 50%;
       bottom: -100px;
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    min-height: 342px;
+    align-items: end;
+
+
+
+    @include mediaSmall {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-items: center;
+      align-content: center;
+      min-height: 380px;
     }
   }
 }

@@ -8,6 +8,7 @@
     position: relative;
     z-index: 100;
     display: none;
+    margin-top: 20px;
 
 
     @include mediaTablet {
@@ -22,7 +23,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: $white ;
         position: absolute;
         transition: all 0.3s;
 
@@ -66,7 +67,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
         position: fixed;
         top: 0;
         left: -100%;
@@ -79,15 +79,25 @@
         z-index: 10;
     }
 
-    a {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    &__item {}
+
+    &__link {
         color: $white;
-        text-decoration: none;
         font-size: 25px;
 
         &:hover {
             color: $accent;
+            font-size: 30px;
         }
     }
+
 }
 
 .burger-menu.active {

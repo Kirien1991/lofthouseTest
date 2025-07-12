@@ -10,7 +10,8 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+        gap: 26px;
+        padding-left: 17px;
 
         @include mediaSmall {
             grid-template-columns: 1fr 1fr;
@@ -18,21 +19,12 @@
     }
 
     &__nav {
-        padding-left: 8px;
         padding-top: 2px;
     }
 
     &__adress {
         padding-top: 1px;
-        padding-left: 2px;
-    }
 
-    &__socials {
-        padding-top: 21px;
-        padding-left: 1px;
-        display: flex;
-        column-gap: 24px;
-        align-items: center;
     }
 
 }
@@ -41,6 +33,7 @@
     &__list {
         gap: 15px;
         display: grid;
+        padding-bottom: 20px;
 
         @include mediaSmall {
             gap: 10px;
