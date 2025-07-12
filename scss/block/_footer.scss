@@ -13,8 +13,8 @@
         gap: 26px;
         padding-left: 17px;
 
-        @include mediaSmall {
-            grid-template-columns: 1fr 1fr;
+        @include mediaTablet {
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         }
     }
 

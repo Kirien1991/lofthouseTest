@@ -279,8 +279,7 @@ body {
 }
 @media screen and (max-width: 720px) {
   .logo__title {
-    font-size: 16px;
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -735,9 +734,9 @@ body {
   gap: 26px;
   padding-left: 17px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 959px) {
   .footer__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }
 .footer__nav {
