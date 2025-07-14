@@ -21,3 +21,9 @@
         @content;
     }
 }
+
+@mixin mediaBodd {
+    @media screen and (max-width: $bodd) {
+        @content;
+    }
+}

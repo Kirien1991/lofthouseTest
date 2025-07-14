@@ -601,14 +601,6 @@ body {
     margin-top: 10px;
   }
 }
-.cta__form--bottom p {
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-size: 13px;
-  padding-top: 11px;
-  text-align: center;
-  padding-left: 7px;
-}
 
 .form__input {
   height: 50px;
@@ -631,7 +623,7 @@ body {
 }
 @media screen and (max-width: 959px) {
   .form__privacy {
-    grid-row: 1;
+    grid-row: 5;
     color: #d4c17f;
   }
 }
@@ -709,13 +701,13 @@ body {
   color: white;
   opacity: 0.02;
   transform: translate(-46%, -22%);
+  z-index: -1;
 }
 
 .map {
   overflow: hidden;
   height: 358px;
   background: #626262;
-  position: relative;
 }
 
 .footer {

@@ -24,6 +24,7 @@
             color: $white;
             opacity: 0.02;
             transform: translate(-46%, -22%);
+            z-index: -1;
         }
     }
 }
@@ -32,7 +33,4 @@
     overflow: hidden;
     height: 358px;
     background: #626262;
-    position: relative;
-
-
 }
