@@ -197,15 +197,10 @@ body {
 }
 
 .header {
-  background-image: url("/image/header/Rectangle.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 140px;
   max-width: 100%;
-  min-height: 814px;
   padding-top: 42px;
   padding-bottom: 42px;
-  overflow: hidden;
 }
 .header__top {
   display: flex;
@@ -378,9 +373,16 @@ body {
 }
 
 .banner {
-  margin-bottom: 142px;
-  margin-top: -518px;
-  position: relative;
+  background-image: url("/image/header/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 297px;
+  padding-bottom: 142px;
+  margin-top: -140px;
+}
+.banner .title-accent {
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 959px) {
   .banner {
@@ -394,23 +396,14 @@ body {
   }
 }
 .banner__icon {
-  position: absolute;
-  top: 44%;
-  left: 50.4%;
-  transform: translate(-50%, 0%);
-}
-@media screen and (max-width: 720px) {
-  .banner__icon {
-    top: 30%;
-    left: 50%;
-    bottom: -100px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
 }
 .banner__footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  min-height: 342px;
   align-items: end;
 }
 @media screen and (max-width: 720px) {

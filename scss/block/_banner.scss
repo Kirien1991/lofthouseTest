@@ -1,11 +1,17 @@
 .banner {
-  margin-bottom: 142px;
-  margin-top: -518px;
-  position: relative;
+  background-image: url("/image/header/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 297px;
+  padding-bottom: 142px;
+  margin-top: -140px;
 
+  .title-accent {
+    margin-bottom: 80px;
+  }
 
   @include mediaTablet {
-
     margin-top: -600px;
   }
 
@@ -15,26 +21,16 @@
   }
 
   &__icon {
-    position: absolute;
-    top: 44%;
-    left: 50.4%;
-    transform: translate(-50%, 0%);
-
-    @include mediaSmall {
-      top: 30%;
-      left: 50%;
-      bottom: -100px;
-    }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
   }
 
   &__footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    min-height: 342px;
     align-items: end;
-
-
 
     @include mediaSmall {
       grid-template-columns: 1fr;
