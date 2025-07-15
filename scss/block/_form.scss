@@ -20,6 +20,34 @@
     text-align: center;
     padding-top: 12px;
 
+    p {
+      padding-top: 11px;
+      padding-left: 10px;
+    }
+
+    &--content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+      margin-top: 9px;
+      font-family: $font-raleway;
+      color: $text;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+
+      p {
+        padding: 12px 0 0 13px;
+      }
+
+      @include mediaTablet {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin-top: 10px;
+      }
+
+    }
+
 
 
     @include mediaTablet {

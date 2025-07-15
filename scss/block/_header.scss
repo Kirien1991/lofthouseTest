@@ -1,13 +1,14 @@
 .header {
-  background-image: url("/image/header/Rectangle.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   max-width: 100%;
-  min-height: 814px;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  height: 140px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   overflow: hidden;
+
+  @include mediaSmall {
+    overflow: visible;
+  }
+
 
   &__top {
     display: flex;

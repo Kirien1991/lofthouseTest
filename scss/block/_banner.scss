@@ -1,28 +1,36 @@
 .banner {
-  margin-bottom: 142px;
-  margin-top: -518px;
+  background-image: url("/image/header/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 286px;
+  padding-bottom: 59px;
+  margin-top: -140px;
   position: relative;
+  z-index: -1;
 
 
   @include mediaTablet {
-
-    margin-top: -600px;
+    margin-top: -270px;
   }
 
   @include mediaSmall {
-    margin-top: -370px;
     margin-bottom: -50px;
+    margin-top: 50px;
   }
 
   &__icon {
     position: absolute;
-    top: 44%;
+    top: 60.5%;
     left: 50.4%;
     transform: translate(-50%, 0%);
 
+    @include mediaTablet {
+      top: 73.5%;
+    }
+
     @include mediaSmall {
       top: 30%;
-      left: 50%;
+      left: 51%;
       bottom: -100px;
     }
   }
@@ -36,12 +44,16 @@
 
 
 
+    @include mediaTablet {
+      min-height: 125px;
+    }
+
     @include mediaSmall {
       grid-template-columns: 1fr;
       gap: 40px;
       justify-items: center;
       align-content: center;
-      min-height: 380px;
+      min-height: 230px;
     }
   }
 }

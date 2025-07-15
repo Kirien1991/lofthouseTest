@@ -13,10 +13,8 @@
 
     @include mediaTablet {
         display: block;
-    }
-
-    @include mediaSmall {
-        margin-top: 45px;
+        position: fixed;
+        right: 25px;
     }
 
     span {

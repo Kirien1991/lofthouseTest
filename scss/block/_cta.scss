@@ -12,16 +12,6 @@
 
   }
 
-  &--bottom {
-    background-image: none;
-    margin-bottom: 18px;
-
-    @include mediaTablet {
-
-      padding: 40px 0;
-    }
-  }
-
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,13 +20,6 @@
     @include mediaTablet {
       grid-template-columns: 1fr;
       gap: 0;
-    }
-
-    &--bottom {
-      display: block;
-
-
-
     }
   }
 
@@ -67,19 +50,6 @@
       grid-template-columns: 1fr;
       gap: 5px;
       margin-top: 10px;
-    }
-
-    &--bottom {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 30px;
-      margin-top: 39px;
-
-      @include mediaTablet {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        margin-top: 10px;
-      }
     }
   }
 }

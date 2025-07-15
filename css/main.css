@@ -197,15 +197,16 @@ body {
 }
 
 .header {
-  background-image: url("/image/header/Rectangle.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   max-width: 100%;
-  min-height: 814px;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  height: 140px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+  .header {
+    overflow: visible;
+  }
 }
 .header__top {
   display: flex;
@@ -378,31 +379,41 @@ body {
 }
 
 .banner {
-  margin-bottom: 142px;
-  margin-top: -518px;
+  background-image: url("/image/header/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 286px;
+  padding-bottom: 59px;
+  margin-top: -140px;
   position: relative;
+  z-index: -1;
 }
 @media screen and (max-width: 959px) {
   .banner {
-    margin-top: -600px;
+    margin-top: -270px;
   }
 }
 @media screen and (max-width: 720px) {
   .banner {
-    margin-top: -370px;
     margin-bottom: -50px;
+    margin-top: 50px;
   }
 }
 .banner__icon {
   position: absolute;
-  top: 44%;
+  top: 60.5%;
   left: 50.4%;
   transform: translate(-50%, 0%);
+}
+@media screen and (max-width: 959px) {
+  .banner__icon {
+    top: 73.5%;
+  }
 }
 @media screen and (max-width: 720px) {
   .banner__icon {
     top: 30%;
-    left: 50%;
+    left: 51%;
     bottom: -100px;
   }
 }
@@ -413,18 +424,23 @@ body {
   min-height: 342px;
   align-items: end;
 }
+@media screen and (max-width: 959px) {
+  .banner__footer {
+    min-height: 125px;
+  }
+}
 @media screen and (max-width: 720px) {
   .banner__footer {
     grid-template-columns: 1fr;
     gap: 40px;
     justify-items: center;
     align-content: center;
-    min-height: 380px;
+    min-height: 230px;
   }
 }
 
 .testimonials {
-  padding: 52px 0 113px 0;
+  padding: 135px 0 114px 0;
   overflow: hidden;
 }
 @media screen and (max-width: 959px) {
@@ -540,15 +556,6 @@ body {
     padding: 40px 0;
   }
 }
-.cta--bottom {
-  background-image: none;
-  margin-bottom: 18px;
-}
-@media screen and (max-width: 959px) {
-  .cta--bottom {
-    padding: 40px 0;
-  }
-}
 .cta__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -559,9 +566,6 @@ body {
     grid-template-columns: 1fr;
     gap: 0;
   }
-}
-.cta__wrapper--bottom {
-  display: block;
 }
 .cta__title {
   padding-left: 17px;
@@ -588,19 +592,6 @@ body {
     margin-top: 10px;
   }
 }
-.cta__form--bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  margin-top: 39px;
-}
-@media screen and (max-width: 959px) {
-  .cta__form--bottom {
-    grid-template-columns: 1fr;
-    gap: 5px;
-    margin-top: 10px;
-  }
-}
 
 .form__input {
   height: 50px;
@@ -620,6 +611,31 @@ body {
   line-height: 16px;
   text-align: center;
   padding-top: 12px;
+}
+.form__privacy p {
+  padding-top: 11px;
+  padding-left: 10px;
+}
+.form__privacy--content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 9px;
+  font-family: "Raleway", sans-serif;
+  color: #e7e7e7;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+}
+.form__privacy--content p {
+  padding: 12px 0 0 13px;
+}
+@media screen and (max-width: 959px) {
+  .form__privacy--content {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 959px) {
   .form__privacy {
@@ -711,7 +727,7 @@ body {
 }
 
 .footer {
-  padding-top: 71px;
+  padding-top: 73px;
   padding-bottom: 50px;
   background-color: #2D343C;
 }
@@ -771,6 +787,25 @@ body {
   align-items: center;
 }
 
+.cta-form {
+  padding: 179px 0 178px 0;
+}
+@media screen and (max-width: 959px) {
+  .cta-form {
+    padding: 40px 0;
+  }
+}
+.cta-form__wrapper {
+  display: grid;
+  gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta-form__wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
 .burger-btn {
   width: 35px;
   height: 16px;
@@ -785,11 +820,8 @@ body {
 @media screen and (max-width: 959px) {
   .burger-btn {
     display: block;
-  }
-}
-@media screen and (max-width: 720px) {
-  .burger-btn {
-    margin-top: 45px;
+    position: fixed;
+    right: 25px;
   }
 }
 .burger-btn span {
