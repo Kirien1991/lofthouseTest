@@ -629,6 +629,8 @@ body {
 }
 .form__privacy--content p {
   padding: 12px 0 0 13px;
+  grid-row: 5;
+  color: #d4c17f;
 }
 @media screen and (max-width: 959px) {
   .form__privacy--content {

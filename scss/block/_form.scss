@@ -38,6 +38,8 @@
 
       p {
         padding: 12px 0 0 13px;
+        grid-row: 5;
+        color: #d4c17f;
       }
 
       @include mediaTablet {
