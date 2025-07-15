@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 29px 27px;
-  padding-left: 17px;
 
   @include mediaTablet {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));

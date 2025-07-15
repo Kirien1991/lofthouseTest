@@ -1,0 +1,24 @@
+.section {
+    &--cta {
+        background-image: url("/image/cta/Rectangle.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 180px;
+        padding-bottom: 178px;
+
+        .section__title {
+            margin-bottom: 19px;
+        }
+    }
+
+    &__title {
+        font-family: $font-accent;
+        font-size: 36px;
+        font-weight: 700;
+        color: $accent;
+        margin-bottom: 88px;
+    }
+
+
+    &__content {}
+}

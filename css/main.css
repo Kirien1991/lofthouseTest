@@ -116,8 +116,9 @@ body {
 
 .container {
   padding: 0 15px;
-  max-width: 1159px;
+  max-width: 1110px;
   margin: 0 auto;
+  box-sizing: content-box;
 }
 .container--small {
   max-width: 824px;
@@ -179,9 +180,6 @@ body {
   font-size: 36px;
   text-align: start;
 }
-.title-accent span {
-  padding-left: 12px;
-}
 
 .link-adress {
   color: #d4c17f;
@@ -196,10 +194,27 @@ body {
   }
 }
 
+.section--cta {
+  background-image: url("/image/cta/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 180px;
+  padding-bottom: 178px;
+}
+.section--cta .section__title {
+  margin-bottom: 19px;
+}
+.section__title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #d4c17f;
+  margin-bottom: 88px;
+}
 .header {
   max-width: 100%;
   height: 140px;
-  padding-top: 31px;
+  padding-top: 42px;
   padding-bottom: 31px;
   overflow: hidden;
 }
@@ -211,7 +226,6 @@ body {
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding-left: 17px;
 }
 @media screen and (max-width: 720px) {
   .header__top {
@@ -319,124 +333,53 @@ body {
   color: #d4c17f;
 }
 
-.text-left {
-  text-align: right;
-}
-
-.text-right {
-  padding-left: 53px;
-}
-@media screen and (max-width: 720px) {
-  .text-right {
-    padding-left: 0;
-  }
-}
-
-.info {
-  position: relative;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-}
-.info::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -32px;
-  right: 0;
-  bottom: 0;
-  background-image: url("/image/header/map.svg");
-  background-repeat: no-repeat;
-}
-.info:hover {
-  color: #d4c17f;
-}
-.info:hover::after {
-  transform: scale(1.1);
-}
-
-.info-tel {
-  position: relative;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-}
-.info-tel::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -36px;
-  right: 0;
-  bottom: 0;
-  background-image: url("/image/header/phone.svg");
-  background-repeat: no-repeat;
-}
-.info-tel:hover {
-  color: #d4c17f;
-}
-.info-tel:hover::before {
-  transform: scale(1.1);
-}
-
 .banner {
   background-image: url("/image/header/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 286px;
-  padding-bottom: 59px;
+  padding-top: 296px;
+  padding-bottom: 60px;
   margin-top: -140px;
-  position: relative;
-  z-index: -1;
+}
+.banner .title-accent {
+  margin-bottom: 80px;
+}
+.banner .title-accent span:first-of-type {
+  margin-left: -11px;
 }
 @media screen and (max-width: 959px) {
   .banner {
-    margin-top: -270px;
+    margin-top: -600px;
   }
 }
 @media screen and (max-width: 720px) {
   .banner {
+    margin-top: -370px;
     margin-bottom: -50px;
-    margin-top: 50px;
   }
 }
 .banner__icon {
-  position: absolute;
-  top: 60.5%;
-  left: 50.4%;
-  transform: translate(-50%, 0%);
-}
-@media screen and (max-width: 959px) {
-  .banner__icon {
-    top: 73.5%;
-  }
-}
-@media screen and (max-width: 720px) {
-  .banner__icon {
-    top: 30%;
-    left: 51%;
-    bottom: -100px;
-  }
+  text-align: center;
+  margin-bottom: 100px;
 }
 .banner__footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  min-height: 342px;
-  align-items: end;
+  display: flex;
+  justify-content: center;
+  gap: 95px;
 }
-@media screen and (max-width: 959px) {
-  .banner__footer {
-    min-height: 125px;
-  }
+.banner__footer a:first-of-type {
+  justify-content: flex-end;
 }
-@media screen and (max-width: 720px) {
-  .banner__footer {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    justify-items: center;
-    align-content: center;
-    min-height: 230px;
-  }
+.banner__info {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  gap: 17px;
+}
+.banner__info:hover {
+  color: #d4c17f;
 }
 
 .testimonials {
@@ -493,25 +436,10 @@ body {
   transform: translate(102%, -28%);
 }
 
-.apartments__item {
-  margin-bottom: 87px;
-  position: relative;
-}
-.apartments__item::before {
-  content: "III";
-  position: absolute;
-  font-family: "Playfair Display", serif;
-  font-size: 400px;
-  font-weight: 700;
-  color: white;
-  opacity: 0.02;
-  transform: translate(-46%, -13%);
-}
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 29px 27px;
-  padding-left: 17px;
 }
 @media screen and (max-width: 959px) {
   .card {
@@ -544,31 +472,17 @@ body {
 }
 
 .cta {
-  padding-top: 180px;
-  padding-bottom: 161px;
-  overflow: hidden;
-  background-image: url("/image/cta/Rectangle.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media screen and (max-width: 959px) {
-  .cta {
-    padding: 40px 0;
-  }
-}
-.cta__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 @media screen and (max-width: 959px) {
-  .cta__wrapper {
+  .cta {
     grid-template-columns: 1fr;
     gap: 0;
   }
 }
 .cta__title {
-  padding-left: 17px;
   max-width: 548px;
 }
 .cta__title p {
@@ -576,14 +490,11 @@ body {
   color: white;
   font-size: 16px;
   line-height: 24px;
-  padding-top: 19px;
 }
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 36px 27px;
-  margin-top: 66px;
-  margin-left: 7px;
 }
 @media screen and (max-width: 959px) {
   .cta__form {
@@ -665,7 +576,6 @@ body {
 }
 
 .video {
-  overflow: hidden;
   text-align: center;
 }
 .video__content {
@@ -682,16 +592,17 @@ body {
 }
 .video__icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-43%, -40%);
-  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
 }
 .video__image {
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 20px;
-  padding-left: 14px;
 }
 
 .section-map {

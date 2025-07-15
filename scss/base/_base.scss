@@ -4,8 +4,9 @@ body {
 
 .container {
   padding: 0 15px;
-  max-width: 1159px;
+  max-width: 1110px;
   margin: 0 auto;
+  box-sizing: content-box;
 
   &--small {
     max-width: 824px;
@@ -67,10 +68,6 @@ body {
   &--bottom {
     font-size: 36px;
     text-align: start;
-  }
-
-  span {
-    padding-left: 12px;
   }
 }
 

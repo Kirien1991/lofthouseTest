@@ -1,5 +1,4 @@
 .video {
-    overflow: hidden;
     text-align: center;
 
     &__content {
@@ -20,16 +19,17 @@
 
     &__icon {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-43%, -40%);
-        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
     }
 
     &__image {
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 20px;
-        padding-left: 14px;
     }
 }

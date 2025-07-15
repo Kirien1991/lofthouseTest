@@ -2,58 +2,58 @@
   background-image: url("/image/header/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 286px;
-  padding-bottom: 59px;
+  padding-top: 296px;
+  padding-bottom: 60px;
   margin-top: -140px;
-  position: relative;
-  z-index: -1;
 
+  .title-accent {
+    margin-bottom: 80px;
+
+    span {
+      &:first-of-type {
+        margin-left: -11px;
+      }
+    }
+  }
 
   @include mediaTablet {
-    margin-top: -270px;
+
+    margin-top: -600px;
   }
 
   @include mediaSmall {
+    margin-top: -370px;
     margin-bottom: -50px;
-    margin-top: 50px;
   }
 
   &__icon {
-    position: absolute;
-    top: 60.5%;
-    left: 50.4%;
-    transform: translate(-50%, 0%);
-
-    @include mediaTablet {
-      top: 73.5%;
-    }
-
-    @include mediaSmall {
-      top: 30%;
-      left: 51%;
-      bottom: -100px;
-    }
+    text-align: center;
+    margin-bottom: 100px;
   }
 
   &__footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    min-height: 342px;
-    align-items: end;
+    display: flex;
+    justify-content: center;
+    gap: 95px;
 
-
-
-    @include mediaTablet {
-      min-height: 125px;
+    a {
+      &:first-of-type {
+        justify-content: flex-end;
+      }
     }
 
-    @include mediaSmall {
-      grid-template-columns: 1fr;
-      gap: 40px;
-      justify-items: center;
-      align-content: center;
-      min-height: 230px;
+  }
+
+  &__info {
+    color: $white;
+    font-family: $font-raleway;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    gap: 17px;
+
+    &:hover {
+      color: $accent;
     }
   }
 }
