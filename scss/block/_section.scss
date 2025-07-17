@@ -1,4 +1,10 @@
 .section {
+
+    .title-accent {
+        font-size: 36px;
+        text-align: start;
+    }
+
     &--cta {
         background-image: url("/image/cta/Rectangle.jpg");
         background-size: cover;
@@ -9,6 +15,7 @@
         .section__title {
             margin-bottom: 19px;
         }
+
     }
 
     &__title {
@@ -20,5 +27,13 @@
     }
 
 
-    &__content {}
+    &__content {
+        .section__title {
+            margin-bottom: 0;
+        }
+
+        .form__privacy--content {
+            margin-top: 39px;
+        }
+    }
 }

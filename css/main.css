@@ -121,7 +121,7 @@ body {
   box-sizing: content-box;
 }
 .container--small {
-  max-width: 824px;
+  max-width: 794px;
 }
 .container--video {
   max-width: 763px;
@@ -156,30 +156,6 @@ body {
     font-size: 36px;
   }
 }
-.title-accent--start {
-  text-align: start;
-  font-size: 36px;
-  padding-top: 2px;
-}
-@media screen and (max-width: 720px) {
-  .title-accent--start {
-    text-align: center;
-  }
-}
-.title-accent--st {
-  text-align: start;
-  font-size: 36px;
-  padding-left: 18px;
-}
-@media screen and (max-width: 720px) {
-  .title-accent--st {
-    text-align: center;
-  }
-}
-.title-accent--bottom {
-  font-size: 36px;
-  text-align: start;
-}
 
 .link-adress {
   color: #d4c17f;
@@ -194,6 +170,10 @@ body {
   }
 }
 
+.section .title-accent {
+  font-size: 36px;
+  text-align: start;
+}
 .section--cta {
   background-image: url("/image/cta/Rectangle.jpg");
   background-size: cover;
@@ -211,6 +191,13 @@ body {
   color: #d4c17f;
   margin-bottom: 88px;
 }
+.section__content .section__title {
+  margin-bottom: 0;
+}
+.section__content .form__privacy--content {
+  margin-top: 39px;
+}
+
 .header {
   max-width: 100%;
   height: 140px;
@@ -414,7 +401,6 @@ body {
   justify-content: space-between;
   column-gap: 49px;
   position: relative;
-  left: 9px;
 }
 @media screen and (max-width: 959px) {
   .testimonials-row {
@@ -537,17 +523,17 @@ body {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-}
-.form__privacy--content p {
-  padding: 12px 0 0 13px;
-  grid-row: 5;
-  color: #d4c17f;
+  align-items: center;
 }
 @media screen and (max-width: 959px) {
   .form__privacy--content {
     grid-template-columns: 1fr;
     gap: 5px;
     margin-top: 10px;
+  }
+  .form__privacy--content p {
+    grid-row: 5;
+    color: #d4c17f;
   }
 }
 @media screen and (max-width: 959px) {
@@ -577,6 +563,7 @@ body {
 
 .video {
   text-align: center;
+  margin-bottom: 180px;
 }
 .video__content {
   max-width: 750px;
@@ -606,7 +593,7 @@ body {
 }
 
 .section-map {
-  margin: 180px 0 0 0;
+  margin: 88px 0 0 0;
 }
 @media screen and (max-width: 959px) {
   .section-map {
@@ -653,7 +640,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 26px;
-  padding-left: 17px;
 }
 @media screen and (max-width: 959px) {
   .footer__grid {

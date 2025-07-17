@@ -9,7 +9,7 @@ body {
   box-sizing: content-box;
 
   &--small {
-    max-width: 824px;
+    max-width: 794px;
   }
 
   &--video {
@@ -45,32 +45,7 @@ body {
     font-size: 36px;
   }
 
-  &--start {
-    text-align: start;
-    font-size: 36px;
-    padding-top: 2px;
-
-    @include mediaSmall {
-      text-align: center;
-    }
-  }
-
-  &--st {
-    text-align: start;
-    font-size: 36px;
-    padding-left: 18px;
-
-    @include mediaSmall {
-      text-align: center;
-    }
-  }
-
-  &--bottom {
-    font-size: 36px;
-    text-align: start;
-  }
 }
-
 
 //footer
 .link-adress {

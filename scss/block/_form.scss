@@ -35,17 +35,18 @@
       font-size: 13px;
       line-height: 16px;
       text-align: center;
+      align-items: center;
 
-      p {
-        padding: 12px 0 0 13px;
-        grid-row: 5;
-        color: #d4c17f;
-      }
 
       @include mediaTablet {
         grid-template-columns: 1fr;
         gap: 5px;
         margin-top: 10px;
+
+        p {
+          grid-row: 5;
+          color: #d4c17f;
+        }
       }
 
     }
