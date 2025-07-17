@@ -7,7 +7,12 @@
   margin-top: -140px;
 
   .title-accent {
+    text-align: center;
     margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
 
     span {
       &:first-of-type {
@@ -17,7 +22,6 @@
   }
 
   @include mediaTablet {
-
     margin-top: -600px;
   }
 
