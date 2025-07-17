@@ -2,6 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 29px 27px;
+  position: relative;
+
+  &::before {
+    content: "III";
+    position: absolute;
+    font-size: 400px;
+    font-weight: 700;
+    font-family: $font-accent;
+    top: -205px;
+    left: -226px;
+    color: $white;
+    opacity: 2%;
+  }
+
 
   @include mediaTablet {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));

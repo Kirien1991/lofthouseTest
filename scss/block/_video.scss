@@ -1,6 +1,19 @@
 .video {
     text-align: center;
     margin-bottom: 180px;
+    position: relative;
+
+    &::before {
+        content: "IV";
+        position: absolute;
+        font-size: 400px;
+        font-weight: 700;
+        font-family: $font-accent;
+        top: 40px;
+        right: -205px;
+        color: $white;
+        opacity: 2%;
+    }
 
     &__content {
         max-width: 750px;

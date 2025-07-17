@@ -1,5 +1,18 @@
 .section-map {
     margin: 88px 0 0 0;
+    position: relative;
+
+    &::before {
+        content: "V";
+        position: absolute;
+        font-size: 400px;
+        font-weight: 700;
+        font-family: $font-accent;
+        top: -205px;
+        left: -140px;
+        color: $white;
+        opacity: 2%;
+    }
 
     @include mediaTablet {
         margin: 35px 0;

@@ -343,7 +343,7 @@ body {
 
 .testimonials {
   padding: 135px 0 114px 0;
-  overflow: hidden;
+  overflow: visible;
 }
 @media screen and (max-width: 959px) {
   .testimonials {
@@ -374,6 +374,17 @@ body {
   column-gap: 49px;
   position: relative;
 }
+.testimonials-row::before {
+  content: "II";
+  position: absolute;
+  font-size: 400px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  top: -148px;
+  right: -303px;
+  color: white;
+  opacity: 2%;
+}
 @media screen and (max-width: 959px) {
   .testimonials-row {
     display: grid;
@@ -381,23 +392,23 @@ body {
     gap: 35px 20px;
   }
 }
-.testimonials-row::before {
-  content: "II";
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 400px;
-  font-weight: 700;
-  color: white;
-  opacity: 0.02;
-  transform: translate(102%, -28%);
-}
 
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 29px 27px;
+  position: relative;
+}
+.card::before {
+  content: "III";
+  position: absolute;
+  font-size: 400px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  top: -205px;
+  left: -226px;
+  color: white;
+  opacity: 2%;
 }
 @media screen and (max-width: 959px) {
   .card {
@@ -536,6 +547,18 @@ body {
 .video {
   text-align: center;
   margin-bottom: 180px;
+  position: relative;
+}
+.video::before {
+  content: "IV";
+  position: absolute;
+  font-size: 400px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  top: 40px;
+  right: -205px;
+  color: white;
+  opacity: 2%;
 }
 .video__content {
   max-width: 750px;
@@ -566,6 +589,18 @@ body {
 
 .section-map {
   margin: 88px 0 0 0;
+  position: relative;
+}
+.section-map::before {
+  content: "V";
+  position: absolute;
+  font-size: 400px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  top: -205px;
+  left: -140px;
+  color: white;
+  opacity: 2%;
 }
 @media screen and (max-width: 959px) {
   .section-map {
