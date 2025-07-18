@@ -1,36 +1,27 @@
 //mixin breakpoint
 @mixin respond-to($breakpoint) {
-    @if $breakpoint =='xs' {
-        @media (max-width: 500px) {
-            @content;
-        }
-    }
 
     @if $breakpoint =='sm' {
-        @media (max-width: 652px) {
+        @media (max-width: 576px) {
             @content;
         }
     }
 
     @if $breakpoint =='md' {
-        @media (max-width: 720px) {
+        @media (max-width: 768px) {
             @content;
         }
     }
 
     @if $breakpoint =='lg' {
-        @media (max-width: 959px) {
+        @media (max-width: 992px) {
             @content;
         }
     }
 
     @if $breakpoint =='xl' {
-        @media (max-width: 1105px) {
+        @media (max-width: 1200px) {
             @content;
         }
-    }
-
-    @else {
-        @error "Unknown breakpoint: #{$breakpoint}. Use: xs, sm, md, lg, xl.";
     }
 }
