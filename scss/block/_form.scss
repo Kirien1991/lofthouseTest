@@ -46,7 +46,7 @@
       }
 
 
-      @include mediaTablet {
+      @include respond-to('lg') {
         grid-template-columns: 1fr;
         gap: 5px;
         margin-top: 10px;
@@ -59,12 +59,12 @@
 
     }
 
-    @include mediaTablet {
+    @include respond-to('lg') {
       grid-row: 5;
       color: $accent;
     }
 
-    @include mediaMore {
+    @include respond-to('sm') {
       font-size: 11px;
     }
   }

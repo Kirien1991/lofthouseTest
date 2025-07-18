@@ -22,7 +22,7 @@ body {
 }
 
 .menu_mobile_didden {
-  @include mediaTablet {
+  @include respond-to('lg') {
     overflow: hidden;
   }
 }

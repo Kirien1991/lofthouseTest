@@ -3,7 +3,7 @@
     padding-bottom: 50px;
     background-color: $bottom;
 
-    @include mediaSmall {
+    @include respond-to('md') {
         padding: 40px 0;
     }
 
@@ -12,7 +12,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 29px;
 
-        @include mediaTablet {
+        @include respond-to('lg') {
             grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         }
     }
@@ -34,7 +34,7 @@
         display: grid;
         padding-bottom: 20px;
 
-        @include mediaSmall {
+        @include respond-to('md') {
             gap: 10px;
         }
 

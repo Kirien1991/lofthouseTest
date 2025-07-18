@@ -12,6 +12,12 @@
         padding-top: 180px;
         padding-bottom: 178px;
 
+        @include respond-to('md') {
+            padding-top: 90px;
+            padding-bottom: 90px;
+
+        }
+
         .section__title {
             margin-bottom: 19px;
         }
@@ -24,6 +30,11 @@
         font-weight: 700;
         color: $accent;
         margin-bottom: 88px;
+
+        @include respond-to('md') {
+            margin-bottom: 90px;
+        }
+
     }
 
     &__content {

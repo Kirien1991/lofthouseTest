@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
-  @include mediaTablet {
+  @include respond-to('lg') {
     grid-template-columns: 1fr;
     gap: 0;
   }
@@ -24,7 +24,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 34px 29px;
 
-    @include mediaTablet {
+    @include respond-to('lg') {
       grid-template-columns: 1fr;
       gap: 5px;
       margin-top: 10px;

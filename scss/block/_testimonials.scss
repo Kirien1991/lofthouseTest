@@ -2,8 +2,8 @@
   padding: 135px 0 114px 0;
   overflow: visible;
 
-  @include mediaTablet {
-    padding: 50px;
+  @include respond-to('lg') {
+    padding: 90px;
   }
 
   &__item {
@@ -45,7 +45,7 @@
     opacity: 2%;
   }
 
-  @include mediaTablet {
+  @include respond-to('lg') {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 35px 20px;

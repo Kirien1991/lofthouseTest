@@ -1,7 +1,7 @@
 .cta-form {
     padding: 179px 0 178px 0;
 
-    @include mediaTablet {
+    @include respond-to('lg') {
 
         padding: 40px 0;
     }
@@ -10,7 +10,7 @@
         display: grid;
         gap: 30px;
 
-        @include mediaTablet {
+        @include respond-to('lg') {
             grid-template-columns: 1fr;
             gap: 0;
         }

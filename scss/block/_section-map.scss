@@ -14,7 +14,7 @@
         opacity: 2%;
     }
 
-    @include mediaTablet {
+    @include respond-to('lg') {
         margin: 35px 0;
     }
 

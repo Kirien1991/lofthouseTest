@@ -8,11 +8,11 @@
       flex-direction: column;
     }
 
-    @include mediaTablet {
+    @include respond-to('lg') {
       gap: 15px;
     }
 
-    @include mediaSmall {
+    @include respond-to('md') {
       display: flex;
       gap: 15px;
       flex-direction: column;
@@ -28,7 +28,7 @@
     color: $white;
     letter-spacing: 0.05em;
 
-    @include mediaSmall {
+    @include respond-to('md') {
       font-size: 16px;
     }
 

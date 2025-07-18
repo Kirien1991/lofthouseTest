@@ -11,11 +11,17 @@
     margin-top: 20px;
 
 
-    @include mediaTablet {
+
+    @include respond-to('lg') {
         display: block;
-        position: fixed;
         right: 25px;
     }
+
+    @include respond-to('md') {
+        right: 0;
+    }
+
+
 
     span {
         display: block;
@@ -61,7 +67,7 @@
 
     display: none;
 
-    @include mediaTablet {
+    @include respond-to('lg') {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,14 +83,16 @@
         z-index: 10;
     }
 
+    @include respond-to('md') {
+        padding: 40px 20px 20px;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 25px;
     }
-
-    &__item {}
 
     &__link {
         color: $white;
@@ -96,8 +104,10 @@
         }
     }
 
+
 }
 
 .burger-menu.active {
     left: 0;
+    height: 100%;
 }

@@ -3,6 +3,10 @@
     margin-bottom: 180px;
     position: relative;
 
+    @include respond-to('lg') {
+        margin-bottom: 90px;
+    }
+
     &::before {
         content: "IV";
         position: absolute;
