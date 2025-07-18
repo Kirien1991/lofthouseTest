@@ -1,29 +1,35 @@
-@mixin mediaMore {
-    @media screen and (max-width: $more) {
-        @content;
-    }
-}
+//mixin breakpoint
+@mixin respond-to($breakpoint) {
 
-@mixin mediaTablet {
-    @media screen and (max-width: $tablet) {
-        @content;
-    }
-}
+    @if $breakpoint =='sm' {
+        @media (max-width: $sm) {
+            @content;
+        }
 
-@mixin mediaSmall {
-    @media screen and (max-width: $small) {
-        @content;
+        //576px
     }
-}
 
-@mixin mediaBorder {
-    @media screen and (max-width: $border) {
-        @content;
+    @if $breakpoint =='md' {
+        @media (max-width: $md) {
+            @content;
+        }
+
+        //768px
     }
-}
 
-@mixin mediaBodd {
-    @media screen and (max-width: $bodd) {
-        @content;
+    @if $breakpoint =='lg' {
+        @media (max-width: $lg) {
+            @content;
+        }
+
+        //992px
+    }
+
+    @if $breakpoint =='xl' {
+        @media (max-width: $xl) {
+            @content;
+        }
+
+        //1200px
     }
 }

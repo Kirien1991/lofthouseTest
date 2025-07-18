@@ -2,42 +2,71 @@
   background-image: url("/image/header/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  padding-top: 297px;
-  padding-bottom: 142px;
+  padding-top: 296px;
+  padding-bottom: 60px;
   margin-top: -140px;
 
   .title-accent {
+    text-align: center;
     margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
+
+
+    @include respond-to('md') {
+      font-size: 35px;
+    }
+
+    span {
+      &:first-of-type {
+        margin-left: -11px;
+      }
+    }
   }
 
-  @include mediaTablet {
-    margin-top: -600px;
+  @include respond-to('lg') {
+    margin-top: -300px;
   }
 
-  @include mediaSmall {
-    margin-top: -370px;
+  @include respond-to('md') {
+    margin-top: -75px;
     margin-bottom: -50px;
   }
 
   &__icon {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
+    text-align: center;
+    margin-bottom: 100px;
+
+    @include respond-to('lg') {
+      margin-bottom: 50px;
+    }
   }
 
   &__footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: end;
+    display: flex;
+    justify-content: center;
+    gap: 95px;
 
-    @include mediaSmall {
-      grid-template-columns: 1fr;
-      gap: 40px;
-      justify-items: center;
-      align-content: center;
-      min-height: 380px;
+    a {
+      &:first-of-type {
+        justify-content: flex-end;
+      }
+    }
+
+  }
+
+  &__info {
+    color: $white;
+    font-family: $font-raleway;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    gap: 17px;
+
+    &:hover {
+      color: $accent;
     }
   }
 }

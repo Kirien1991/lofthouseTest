@@ -2,9 +2,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 29px 27px;
-  padding-left: 17px;
+  position: relative;
 
-  @include mediaTablet {
+  &::before {
+    content: "III";
+    position: absolute;
+    font-size: 400px;
+    font-weight: 700;
+    font-family: $font-accent;
+    top: -205px;
+    left: -226px;
+    color: $white;
+    opacity: 2%;
+  }
+
+
+  @include respond-to('lg') {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 
@@ -24,14 +37,14 @@
     font-size: 24px;
 
     position: absolute;
-    bottom: 42px;
+    bottom: 44px;
     left: 51px;
 
     &:hover {
       color: $accent;
     }
 
-    @include mediaTablet {
+    @include respond-to('lg') {
       font-size: 14px;
     }
   }

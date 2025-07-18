@@ -5,13 +5,12 @@
 @import "./base/base";
 
 //block
+@import "./block/section";
 @import "./block/header";
 @import "./block/logo";
 @import "./block/nav";
-@import "./block/text";
 @import "./block/banner";
 @import "./block/testimonials";
-@import "./block/apartments";
 @import "./block/card";
 @import "./block/cta";
 @import "./block/form";
@@ -19,6 +18,7 @@
 @import "./block/section-map";
 @import "./block/footer";
 @import "./block/socials";
+@import "./block/cta-form";
 
 //burger
 @import "./block/burger";

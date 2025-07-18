@@ -1,0 +1,49 @@
+.section {
+
+    .title-accent {
+        font-size: 36px;
+        text-align: start;
+    }
+
+    &--cta {
+        background-image: url("/image/cta/Rectangle.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 180px;
+        padding-bottom: 178px;
+
+        @include respond-to('md') {
+            padding-top: 90px;
+            padding-bottom: 90px;
+
+        }
+
+        .section__title {
+            margin-bottom: 19px;
+        }
+
+    }
+
+    &__title {
+        font-family: $font-accent;
+        font-size: 36px;
+        font-weight: 700;
+        color: $accent;
+        margin-bottom: 88px;
+
+        @include respond-to('md') {
+            margin-bottom: 90px;
+        }
+
+    }
+
+    &__content {
+        .section__title {
+            margin-bottom: 0;
+        }
+
+        .form__privacy--content {
+            margin-top: 39px;
+        }
+    }
+}

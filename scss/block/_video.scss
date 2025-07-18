@@ -1,6 +1,23 @@
 .video {
-    overflow: hidden;
     text-align: center;
+    margin-bottom: 180px;
+    position: relative;
+
+    @include respond-to('lg') {
+        margin-bottom: 90px;
+    }
+
+    &::before {
+        content: "IV";
+        position: absolute;
+        font-size: 400px;
+        font-weight: 700;
+        font-family: $font-accent;
+        top: 40px;
+        right: -205px;
+        color: $white;
+        opacity: 2%;
+    }
 
     &__content {
         max-width: 750px;
@@ -20,16 +37,17 @@
 
     &__icon {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-43%, -40%);
-        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
     }
 
     &__image {
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 20px;
-        padding-left: 14px;
     }
 }

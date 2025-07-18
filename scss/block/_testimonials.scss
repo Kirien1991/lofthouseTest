@@ -1,9 +1,9 @@
 .testimonials {
-  padding: 52px 0 113px 0;
-  overflow: hidden;
+  padding: 135px 0 114px 0;
+  overflow: visible;
 
-  @include mediaTablet {
-    padding: 50px;
+  @include respond-to('lg') {
+    padding: 90px;
   }
 
   &__item {
@@ -32,25 +32,22 @@
   justify-content: space-between;
   column-gap: 49px;
   position: relative;
-  left: 9px;
-
-  @include mediaTablet {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 35px 20px;
-  }
-
 
   &::before {
     content: "II";
     position: absolute;
-    right: 0;
-    top: 0;
-    font-family: $font-accent;
     font-size: 400px;
     font-weight: 700;
+    font-family: $font-accent;
+    top: -148px;
+    right: -303px;
     color: $white;
-    opacity: 0.02;
-    transform: translate(102%, -28%);
+    opacity: 2%;
+  }
+
+  @include respond-to('lg') {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 35px 20px;
   }
 }

@@ -1,0 +1,18 @@
+.cta-form {
+    padding: 179px 0 178px 0;
+
+    @include respond-to('lg') {
+
+        padding: 40px 0;
+    }
+
+    &__wrapper {
+        display: grid;
+        gap: 30px;
+
+        @include respond-to('lg') {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+    }
+}

@@ -4,76 +4,14 @@ body {
 
 .container {
   padding: 0 15px;
-  max-width: 1159px;
+  max-width: 1110px;
   margin: 0 auto;
+  box-sizing: content-box;
 
   &--small {
-    max-width: 824px;
-  }
-
-  &--video {
-    max-width: 763px;
-    position: relative;
-
-    &::before {
-      content: "IV";
-      position: absolute;
-      font-family: $font-accent;
-      font-size: 400px;
-      font-weight: 700;
-      color: $white;
-      opacity: 0.02;
-      right: 0;
-      transform: translate(92%, 11%);
-    }
+    max-width: 794px;
   }
 }
-
-.title-accent {
-  text-align: center;
-  font-size: 48px;
-  font-family: $font-accent;
-  color: $accent;
-  font-weight: 700;
-
-  @include mediaSmall {
-    font-size: 24px;
-  }
-
-  @include mediaTablet {
-    font-size: 36px;
-  }
-
-  &--start {
-    text-align: start;
-    font-size: 36px;
-    padding-top: 2px;
-
-    @include mediaSmall {
-      text-align: center;
-    }
-  }
-
-  &--st {
-    text-align: start;
-    font-size: 36px;
-    padding-left: 18px;
-
-    @include mediaSmall {
-      text-align: center;
-    }
-  }
-
-  &--bottom {
-    font-size: 36px;
-    text-align: start;
-  }
-
-  span {
-    padding-left: 12px;
-  }
-}
-
 
 //footer
 .link-adress {
@@ -84,7 +22,7 @@ body {
 }
 
 .menu_mobile_didden {
-  @include mediaTablet {
+  @include respond-to('lg') {
     overflow: hidden;
   }
 }
