@@ -30,31 +30,31 @@
 
 //mixin breakpoint
 @mixin respond-to($breakpoint) {
-    @if $breakpoint =='bodd' {
+    @if $breakpoint =='xs' {
         @media (max-width: 500px) {
             @content;
         }
     }
 
-    @else if $breakpoint =='border' {
+    @if $breakpoint =='sm' {
         @media (max-width: 652px) {
             @content;
         }
     }
 
-    @else if $breakpoint =='small' {
+    @if $breakpoint =='md' {
         @media (max-width: 720px) {
             @content;
         }
     }
 
-    @else if $breakpoint =='tablet' {
+    @if $breakpoint =='lg' {
         @media (max-width: 959px) {
             @content;
         }
     }
 
-    @else if $breakpoint =='more' {
+    @if $breakpoint =='xl' {
         @media (max-width: 1105px) {
             @content;
         }
