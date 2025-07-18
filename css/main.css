@@ -146,7 +146,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 180px;
-  padding-bottom: 178px;
+  padding-bottom: 180px;
 }
 @media (max-width: 768px) {
   .section--cta {
@@ -154,8 +154,14 @@ body {
     padding-bottom: 90px;
   }
 }
+.section--cta .cta__title {
+  padding-top: 1px;
+}
 .section--cta .section__title {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
+}
+.section--cta-not-bg {
+  background-image: none;
 }
 .section__title {
   font-family: "Playfair Display", serif;
@@ -514,7 +520,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  padding-top: 11px;
+  padding-top: 13px;
 }
 .form__privacy p {
   padding-top: 11px;
@@ -565,8 +571,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 16px;
+  font-weight: 700;
   background-color: #d4c17f;
-  padding: 12px;
+  padding: 0 12px;
 }
 .form__btn:hover {
   color: #ffd580;
@@ -844,73 +851,5 @@ body {
 
 .burger-menu.active {
   left: 0;
-  height: 100%;
-  max-width: 1110px;
-  box-sizing: content-box;
-  max-width: 794px;
-@media (max-width: 992px) {
-@media (max-width: 768px) {
-  .header {
-    overflow: visible;
-  }
-}
-  padding-top: 296px;
-  padding-bottom: 60px;
-  margin-top: -140px;
-.banner__info:hover {
-  color: #d4c17f;
-}
-  font-family: "Playfair Display", serif;
-  top: -148px;
-  right: -303px;
-  font-family: "Playfair Display", serif;
-  top: -205px;
-  left: -226px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  line-height: 27px;
-  margin-bottom: 180px;
-  position: relative;
-}
-@media (max-width: 992px) {
-  .video {
-    margin-bottom: 90px;
-  }
-}
-.video::before {
-  content: "IV";
-  position: absolute;
-  font-size: 400px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  top: 40px;
-  right: -205px;
-  color: white;
-  opacity: 2%;
-.cta-form {
-  padding: 179px 0 178px 0;
-}
-@media (max-width: 992px) {
-  .cta-form {
-    padding: 40px 0;
-  }
-}
-.cta-form__wrapper {
-  display: grid;
-  gap: 30px;
-}
-@media (max-width: 992px) {
-  .cta-form__wrapper {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-}
-
-    right: 25px;
-@media (max-width: 768px) {
-  .burger-menu {
-    padding: 40px 20px 20px;
-  }
-}
   height: 100%;
 }
