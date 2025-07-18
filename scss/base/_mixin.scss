@@ -2,25 +2,25 @@
 @mixin respond-to($breakpoint) {
 
     @if $breakpoint =='sm' {
-        @media (max-width: 576px) {
+        @media (max-width: $sm) {
             @content;
         }
     }
 
     @if $breakpoint =='md' {
-        @media (max-width: 768px) {
+        @media (max-width: $md) {
             @content;
         }
     }
 
     @if $breakpoint =='lg' {
-        @media (max-width: 992px) {
+        @media (max-width: $lg) {
             @content;
         }
     }
 
     @if $breakpoint =='xl' {
-        @media (max-width: 1200px) {
+        @media (max-width: $xl) {
             @content;
         }
     }
