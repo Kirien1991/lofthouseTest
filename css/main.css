@@ -428,7 +428,7 @@ body {
   color: white;
   font-size: 24px;
   position: absolute;
-  bottom: 42px;
+  bottom: 44px;
   left: 51px;
 }
 .card__text:hover {
@@ -463,7 +463,7 @@ body {
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 36px 27px;
+  gap: 34px 29px;
 }
 @media screen and (max-width: 959px) {
   .cta__form {
@@ -478,6 +478,9 @@ body {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 27px;
   width: 100%;
   padding: 12px;
 }
@@ -490,7 +493,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 11px;
 }
 .form__privacy p {
   padding-top: 11px;
@@ -507,6 +510,10 @@ body {
   line-height: 16px;
   text-align: center;
   align-items: center;
+}
+.form__privacy--content p {
+  display: flex;
+  padding-top: 5px;
 }
 @media screen and (max-width: 959px) {
   .form__privacy--content {
@@ -646,7 +653,7 @@ body {
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 26px;
+  gap: 29px;
 }
 @media screen and (max-width: 959px) {
   .footer__grid {

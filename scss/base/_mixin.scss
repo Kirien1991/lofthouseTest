@@ -27,3 +27,40 @@
         @content;
     }
 }
+
+//mixin breakpoint
+@mixin respond-to($breakpoint) {
+    @if $breakpoint =='bodd' {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='border' {
+        @media (max-width: 652px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='small' {
+        @media (max-width: 720px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='tablet' {
+        @media (max-width: 959px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='more' {
+        @media (max-width: 1105px) {
+            @content;
+        }
+    }
+
+    @else {
+        @error "Unknown breakpoint: #{$breakpoint}. Use: bodd, border, small, tablet, more.";
+    }
+}

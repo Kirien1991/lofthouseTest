@@ -22,7 +22,7 @@
   &__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 36px 27px;
+    gap: 34px 29px;
 
     @include mediaTablet {
       grid-template-columns: 1fr;
