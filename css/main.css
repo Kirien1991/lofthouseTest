@@ -146,7 +146,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 180px;
-  padding-bottom: 178px;
+  padding-bottom: 180px;
 }
 @media (max-width: 768px) {
   .section--cta {
@@ -154,8 +154,14 @@ body {
     padding-bottom: 90px;
   }
 }
+.section--cta .cta__title {
+  padding-top: 1px;
+}
 .section--cta .section__title {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
+}
+.section--cta-not-bg {
+  background-image: none;
 }
 .section__title {
   font-family: "Playfair Display", serif;
@@ -514,7 +520,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  padding-top: 11px;
+  padding-top: 13px;
 }
 .form__privacy p {
   padding-top: 11px;
@@ -565,8 +571,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 16px;
+  font-weight: 700;
   background-color: #d4c17f;
-  padding: 12px;
+  padding: 0 12px;
 }
 .form__btn:hover {
   color: #ffd580;

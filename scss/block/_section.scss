@@ -10,18 +10,24 @@
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 180px;
-        padding-bottom: 178px;
+        padding-bottom: 180px;
 
         @include respond-to('md') {
             padding-top: 90px;
             padding-bottom: 90px;
+        }
 
+        .cta__title {
+            padding-top: 1px;
         }
 
         .section__title {
-            margin-bottom: 19px;
+            margin-bottom: 17px;
         }
+    }
 
+    &--cta-not-bg {
+        background-image: none;
     }
 
     &__title {
