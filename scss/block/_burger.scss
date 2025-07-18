@@ -18,10 +18,9 @@
     }
 
     @include respond-to('md') {
-        right: 0;
+        top: -150px;
+        left: 450px;
     }
-
-
 
     span {
         display: block;

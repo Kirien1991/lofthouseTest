@@ -764,7 +764,8 @@ body {
 }
 @media (max-width: 768px) {
   .burger-btn {
-    right: 0;
+    top: -150px;
+    left: 450px;
   }
 }
 .burger-btn span {
