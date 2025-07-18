@@ -1,33 +1,3 @@
-@mixin mediaMore {
-    @media screen and (max-width: $more) {
-        @content;
-    }
-}
-
-@mixin mediaTablet {
-    @media screen and (max-width: $tablet) {
-        @content;
-    }
-}
-
-@mixin mediaSmall {
-    @media screen and (max-width: $small) {
-        @content;
-    }
-}
-
-@mixin mediaBorder {
-    @media screen and (max-width: $border) {
-        @content;
-    }
-}
-
-@mixin mediaBodd {
-    @media screen and (max-width: $bodd) {
-        @content;
-    }
-}
-
 //mixin breakpoint
 @mixin respond-to($breakpoint) {
     @if $breakpoint =='xs' {
@@ -61,6 +31,6 @@
     }
 
     @else {
-        @error "Unknown breakpoint: #{$breakpoint}. Use: bodd, border, small, tablet, more.";
+        @error "Unknown breakpoint: #{$breakpoint}. Use: xs, sm, md, lg, xl.";
     }
 }
