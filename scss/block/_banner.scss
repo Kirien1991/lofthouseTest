@@ -21,11 +21,11 @@
     }
   }
 
-  @include mediaTablet {
+  @include respond-to('lg') {
     margin-top: -600px;
   }
 
-  @include mediaSmall {
+  @include respond-to('md') {
     margin-top: -370px;
     margin-bottom: -50px;
   }
