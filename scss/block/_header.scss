@@ -5,7 +5,7 @@
   padding-bottom: 31px;
   overflow: hidden;
 
-  @include mediaSmall {
+  @include respond-to('md') {
     overflow: visible;
   }
 
@@ -14,13 +14,13 @@
     display: flex;
     justify-content: space-between;
 
-    @include mediaSmall {
+    @include respond-to('md') {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    @include mediaTablet {
+    @include respond-to('lg') {
       margin-bottom: 50px;
     }
   }
@@ -28,11 +28,11 @@
   &__nav {
     padding-top: 13px;
 
-    @include mediaTablet {
+    @include respond-to('lg') {
       padding-top: 15px;
     }
 
-    @include mediaSmall {
+    @include respond-to('md') {
       margin-top: 20px;
     }
   }
