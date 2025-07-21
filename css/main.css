@@ -551,6 +551,7 @@ body {
     margin-top: 10px;
   }
   .form__privacy--content p {
+    display: grid;
     grid-row: 5;
     color: #d4c17f;
   }
