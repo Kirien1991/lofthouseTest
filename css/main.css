@@ -155,7 +155,7 @@ body {
   }
 }
 .section--cta .section__title {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 .section--ctabottom {
   background-image: none;
@@ -482,6 +482,7 @@ body {
 }
 .cta__title {
   max-width: 548px;
+  padding-top: 1px;
 }
 .cta__title p {
   font-family: "Raleway", sans-serif;
