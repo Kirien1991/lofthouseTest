@@ -11,15 +11,11 @@
     margin-top: 20px;
 
 
-
-    @include respond-to('lg') {
+    @include respond-to('md') {
+        top: -260px;
+        left: 261px;
         display: block;
         right: 25px;
-    }
-
-    @include respond-to('md') {
-        top: -150px;
-        left: 450px;
     }
 
     span {

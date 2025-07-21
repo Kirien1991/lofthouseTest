@@ -157,6 +157,14 @@ body {
 .section--cta .section__title {
   margin-bottom: 19px;
 }
+.section--ctabottom {
+  background-image: none;
+  padding-top: 180px;
+  padding-bottom: 178px;
+}
+.section--ctabottom .section__title {
+  margin-bottom: 19px;
+}
 .section__title {
   font-family: "Playfair Display", serif;
   font-size: 36px;
@@ -563,6 +571,7 @@ body {
   height: 50px;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
   color: white;
   font-size: 16px;
   background-color: #d4c17f;
@@ -756,16 +765,12 @@ body {
   display: none;
   margin-top: 20px;
 }
-@media (max-width: 992px) {
-  .burger-btn {
-    display: block;
-    right: 25px;
-  }
-}
 @media (max-width: 768px) {
   .burger-btn {
-    top: -150px;
-    left: 450px;
+    top: -260px;
+    left: 261px;
+    display: block;
+    right: 25px;
   }
 }
 .burger-btn span {

@@ -24,6 +24,16 @@
 
     }
 
+    &--ctabottom {
+        background-image: none;
+        padding-top: 180px;
+        padding-bottom: 178px;
+
+        .section__title {
+            margin-bottom: 19px;
+        }
+    }
+
     &__title {
         font-family: $font-accent;
         font-size: 36px;
