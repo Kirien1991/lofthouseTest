@@ -1,9 +1,5 @@
 .section {
-
-    .title-accent {
-        font-size: 36px;
-        text-align: start;
-    }
+    overflow: hidden;
 
     &--cta {
         background-image: url("/image/cta/Rectangle.jpg");
@@ -13,9 +9,8 @@
         padding-bottom: 180px;
 
         @include respond-to('md') {
-            padding-top: 90px;
-            padding-bottom: 90px;
-
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
 
         .section__title {
@@ -28,6 +23,12 @@
         background-image: none;
         padding-top: 180px;
         padding-bottom: 178px;
+
+        @include respond-to('md') {
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
 
         .section__title {
             margin-bottom: 19px;
@@ -43,6 +44,8 @@
 
         @include respond-to('md') {
             margin-bottom: 90px;
+            font-size: 28px;
+            margin-bottom: 40px;
         }
 
     }

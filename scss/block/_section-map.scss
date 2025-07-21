@@ -36,6 +36,10 @@
             opacity: 0.02;
             transform: translate(-46%, -22%);
             z-index: -1;
+
+            @include respond-to('lg') {
+                content: "";
+            }
         }
     }
 }

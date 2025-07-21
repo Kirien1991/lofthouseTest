@@ -17,6 +17,11 @@
         right: -205px;
         color: $white;
         opacity: 2%;
+
+
+        @include respond-to('lg') {
+            content: "";
+        }
     }
 
     &__content {

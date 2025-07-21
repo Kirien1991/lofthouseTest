@@ -3,7 +3,7 @@
   overflow: visible;
 
   @include respond-to('lg') {
-    padding: 90px;
+    padding: 30px 0;
   }
 
   &__item {
@@ -33,6 +33,12 @@
   column-gap: 49px;
   position: relative;
 
+  @include respond-to('lg') {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 35px 20px;
+  }
+
   &::before {
     content: "II";
     position: absolute;
@@ -43,11 +49,9 @@
     right: -303px;
     color: $white;
     opacity: 2%;
-  }
 
-  @include respond-to('lg') {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 35px 20px;
+    @include respond-to('lg') {
+      content: "";
+    }
   }
 }
